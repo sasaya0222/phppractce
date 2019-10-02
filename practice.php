@@ -67,8 +67,9 @@ echo "\n";
 //$fruits に配列で好きなフルーツを5個代入し、foreach文で順番に出力してください。
 
 $fruits = array("apple", "orange", "lemon", "tomato", "banana");
-foreach($fruits as $fruits){
-  echo $fruits;
+foreach($fruits as $fruits_name){
+  echo $fruits_name;
+  echo"\n";
 }
 
 echo "\n";
@@ -107,17 +108,20 @@ echo "\n";
   //3.$arr という配列の仮引数を持ち、数値が入った配列
   //array(1, 3, 5 ,7, 9) を渡すとその要素をすべてかけた
   //結果を返す関数を作成してください。
- $arr = array(1, 3, 5 ,7, 9);
+
+ function kanasu($arr){
  foreach($arr as $ar){
   echo $ar*$ar;
   echo "\n";
 } 
+}
+ $arr = array(1, 3, 5 ,7, 9);
 
 //4.【応用】　次のプログラムは、配列の中で一番大きい値を返す 
 //max_array という関数を実装しようとしています。
 //途中の部分を完成させてください。
 
-function max_array ($arr){
+function max_array($arr){
 // とりあえず配列の最初の要素を一番大きい値とする
  $max_number = $arr[0];
  foreach($arr as $a){
